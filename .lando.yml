@@ -8,3 +8,16 @@ tooling:
     service: appserver
     description: Runs the desired tests against the site.
     cmd: bin/behat
+
+  install:
+    service: appserver
+    description: Installs the demo factory site from scratch using config/sync.
+    cmd: drush site:install minimal --existing-config
+
+  ci:
+    service: appserver
+    description: Installs the demo factory site then runs tests in a single command.
+    cmd:
+      - drush site:install minimal --existing-config --yes
+      - bin/behat
+
