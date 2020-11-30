@@ -2,3 +2,9 @@ name: lagoon-demo-factory
 recipe: drupal8
 config:
   webroot: web
+
+tooling:
+  test:
+    service: appserver
+    description: Runs the desired tests against the site.
+    cmd: bin/behat
