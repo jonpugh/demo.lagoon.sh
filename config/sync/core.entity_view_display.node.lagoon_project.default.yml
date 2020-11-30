@@ -1,0 +1,19 @@
+uuid: 68810c93-f33e-40a6-a788-4103008e6d1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lagoon_project
+  module:
+    - user
+id: node.lagoon_project.default
+targetEntityType: node
+bundle: lagoon_project
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

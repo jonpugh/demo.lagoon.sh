@@ -1,0 +1,18 @@
+uuid: 5d2bb56e-254d-43b1-820e-031c8b7478e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lagoon_project
+id: node.lagoon_project.title
+field_name: title
+entity_type: node
+bundle: lagoon_project
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+uuid: 91fdf3cb-e352-406e-b4bd-8fc93b97ded6
+name: 'The Lagoon Demo Factory'
+mail: no-reply@lagoon.sh
+slogan: 'Serving up tasty Lagoon demos for free.'
+page:
+  403: '/user/register?destination=node/add'
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

@@ -15,3 +15,5 @@ Feature: Get a Demo Project on Lagoon
     Then I fill in "Super Demo" for "Name"
     And I press "Save"
     Then I should see the success message "Lagoon Project Super Demo has been created."
+    Then I am on the homepage
+    Then I should see the link "Super Demo"

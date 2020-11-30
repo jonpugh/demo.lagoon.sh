@@ -1,0 +1,20 @@
+uuid: b171e65c-9155-4484-bc65-637452e42c8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.lagoon_project
+  module:
+    - user
+id: node.lagoon_project.teaser
+targetEntityType: node
+bundle: lagoon_project
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

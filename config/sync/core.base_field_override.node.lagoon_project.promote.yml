@@ -1,0 +1,22 @@
+uuid: cfebee4c-498a-45d8-9262-2139bdeb9777
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lagoon_project
+id: node.lagoon_project.promote
+field_name: promote
+entity_type: node
+bundle: lagoon_project
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

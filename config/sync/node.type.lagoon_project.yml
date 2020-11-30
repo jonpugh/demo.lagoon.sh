@@ -1,0 +1,17 @@
+uuid: c4e3791c-2920-46df-b14e-b72e20ecb8fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Lagoon Project'
+type: lagoon_project
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true
