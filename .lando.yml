@@ -1,0 +1,4 @@
+name: lagoon-demo-factory
+recipe: drupal8
+config:
+  webroot: web
