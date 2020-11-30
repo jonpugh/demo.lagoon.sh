@@ -5,6 +5,7 @@ default:
         - FeatureContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
   extensions:
     Drupal\MinkExtension:
       goutte: ~
@@ -19,3 +20,7 @@ default:
         drupal_root: '/app/web'
       region_map:
         footer: "#footer"
+      selectors:
+        message_selector: '.messages'
+        error_message_selector: '.messages.messages--error'
+        success_message_selector: '.messages.messages--status'
