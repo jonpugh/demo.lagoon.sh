@@ -32,6 +32,14 @@ To develop this project, follow these instructions:
         # Install/Reinstall and test in one command.
         lando ci
 
+## Scope & Tests
+
+To keep things manageable, the scope of this project will be defined by Gherkin syntax "Feature" files, that are also used for testing the functionality of the site.
+
+The *.feature files located in the [features](./features) folder are "Behat" tests that describe a user's behavior click by click.
+
+These feature files will be written before functionality is complete to provide a clear structure for what the requirements are.
+
 ## Composer Usage
 
 This is an instance of the Drupal Composer Drupal Project template.
