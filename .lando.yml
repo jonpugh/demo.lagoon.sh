@@ -9,6 +9,11 @@ tooling:
     description: Runs the desired tests against the site.
     cmd: bin/behat
 
+  login:
+    service: appserver
+    description: Runs drush uli with a correct link.
+    cmd: drush uli --uri=lagoon-demo-factory.lndo.site
+
   install:
     service: appserver
     description: Installs the demo factory site from scratch using config/sync.
