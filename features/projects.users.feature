@@ -11,7 +11,7 @@ Feature: Get a Demo Project on Lagoon
       | testuser | test@test.com |              |
     Given I am on the homepage
     Then I should see "Lagoon Demo Factory"
-    When I am logged in as a user with the "authenticated user" role
+    When I am logged in as "testuser"
     And I am on the homepage
     Then I should see "You don't have any Lagoon Projects"
     And I click "Add content"
