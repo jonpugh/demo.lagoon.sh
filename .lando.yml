@@ -1,26 +1,26 @@
 name: lagoon-demo-factory
-recipe: drupal8
+recipe: lagoon
 config:
   webroot: web
 
 tooling:
   test:
-    service: appserver
+    service: cli
     description: Runs the desired tests against the site.
     cmd: bin/behat
 
   login:
-    service: appserver
+    service: cli
     description: Runs drush uli with a correct link.
     cmd: drush uli --uri=lagoon-demo-factory.lndo.site
 
   install:
-    service: appserver
+    service: cli
     description: Installs the demo factory site from scratch using config/sync.
     cmd: drush site:install minimal --existing-config
 
   ci:
-    service: appserver
+    service: cli
     description: Installs the demo factory site then runs tests in a single command.
     cmd:
       - drush site:install minimal --existing-config --yes
